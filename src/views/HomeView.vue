@@ -4,32 +4,28 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 const allItems = ref<any[]>([])
-const displayItems = ref<any[]>([]) // 仅用于首页推荐流的无限加载
+const displayItems = ref<any[]>([])
 const activeTab = ref('推荐')
 const tabs = ['推荐', '服饰', '美妆', '日用品', '跨境', '综合']
 const searchQuery = ref('')
-const isLoading = ref(false) 
+const isLoading = ref(false)
 
 const categoryMap: Record<string, string> = {
   '服饰': 'clothing', '美妆': 'beauty', '日用品': 'daily', '跨境': 'crossborder', '综合': 'general'
 }
 
-// 🎯 1. 动态 Banner 数据源 (从商品数据中自动提取，每次随机排序)
 const realBanners = computed(() => {
   const banners = allItems.value
-    .filter(item => item.bannerImg) // 只提取有 bannerImg 的商品
+    .filter(item => item.bannerImg)
     .map(item => ({
       img: item.bannerImg,
       linkId: item.id,
       title: item.title.length > 10 ? item.title.substring(0, 10) + '...' : item.title
     }))
-  
-  // 🎲 Fisher-Yates 洗牌算法，实现随机排序
   for (let i = banners.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
     ;[banners[i], banners[j]] = [banners[j], banners[i]]
   }
-  
   return banners
 })
 
@@ -37,8 +33,8 @@ const loopBanners = computed(() => {
   if (realBanners.value.length === 0) return []
   if (realBanners.value.length === 1) return realBanners.value
   return [
-    realBanners.value[realBanners.value.length - 1], 
-    ...realBanners.value, 
+    realBanners.value[realBanners.value.length - 1],
+    ...realBanners.value,
     realBanners.value[0]
   ]
 })
@@ -50,33 +46,29 @@ let bannerTimer: any = null
 const startBannerTimer = () => {
   stopBannerTimer()
   if (realBanners.value.length <= 1) return
-  // 核心修复：使用绝对索引跳转，避免 scrollBy 累加误差
   bannerTimer = setInterval(() => {
     if (!bannerScrollRef.value) return
     let targetIndex = currentBanner.value + 1
     if (targetIndex >= realBanners.value.length) targetIndex = 0
-    // 跳转到目标真实索引（在 loopBanners 中 index + 1）
     bannerScrollRef.value.scrollTo({ left: (targetIndex + 1) * bannerScrollRef.value.clientWidth, behavior: 'smooth' })
   }, 5000)
 }
 
 const stopBannerTimer = () => { if (bannerTimer) clearInterval(bannerTimer) }
 
-// 🎯 核心修复：使用 scrollTo(auto) 进行边界重置，防止打断平滑动画
 const onBannerScroll = () => {
   if (!bannerScrollRef.value) return
   const width = bannerScrollRef.value.clientWidth
   const scrollLeft = bannerScrollRef.value.scrollLeft
   let index = Math.round(scrollLeft / width)
-
-  if (index === loopBanners.value.length - 1) { 
-    bannerScrollRef.value.scrollTo({ left: 1 * width, behavior: 'auto' }); 
-    currentBanner.value = 0 
-  } else if (index === 0) { 
-    bannerScrollRef.value.scrollTo({ left: realBanners.value.length * width, behavior: 'auto' }); 
-    currentBanner.value = realBanners.value.length - 1 
-  } else { 
-    currentBanner.value = index - 1 
+  if (index === loopBanners.value.length - 1) {
+    bannerScrollRef.value.scrollTo({ left: 1 * width, behavior: 'auto' })
+    currentBanner.value = 0
+  } else if (index === 0) {
+    bannerScrollRef.value.scrollTo({ left: realBanners.value.length * width, behavior: 'auto' })
+    currentBanner.value = realBanners.value.length - 1
+  } else {
+    currentBanner.value = index - 1
   }
 }
 
@@ -86,7 +78,7 @@ const switchBanner = (direction: 1 | -1) => {
   if (nextIndex < 0) nextIndex = realBanners.value.length - 1
   if (nextIndex >= realBanners.value.length) nextIndex = 0
   bannerScrollRef.value.scrollTo({ left: (nextIndex + 1) * bannerScrollRef.value.clientWidth, behavior: 'smooth' })
-  startBannerTimer() // 点击后重置定时器
+  startBannerTimer()
 }
 
 const vReveal: Directive = {
@@ -105,41 +97,33 @@ const vReveal: Directive = {
 
 const shuffle = (array: any[]) => {
   for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]]
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[array[i], array[j]] = [array[j], array[i]]
   }
   return array
 }
 
-// 🎯 核心：加载更多数据（仅追加到 displayItems）
 const loadMore = () => {
   if (isLoading.value) return
   isLoading.value = true
-
   setTimeout(() => {
     let candidates = [...allItems.value]
-    // 推荐流过滤掉综合类
-    // candidates = candidates.filter(i => i.category !== 'general')
-
     const newBatch = shuffle(candidates)
     displayItems.value.push(...newBatch)
     isLoading.value = false
   }, 600)
 }
 
-// 🎯 智能触底检测：仅在"推荐"且"无搜索词"时生效
 const handleScroll = () => {
-  if (activeTab.value !== '推荐' || searchQuery.value.trim()) return;
-
+  if (activeTab.value !== '推荐' || searchQuery.value.trim()) return
   if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 800) {
     loadMore()
   }
 }
 
-// 🎯 监听 Tab 和搜索词变化，自动滚动到顶部提升体验
 const handleTabOrSearchChange = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
-  isLoading.value = false; // 立即停止加载状态
+  isLoading.value = false
 }
 
 onMounted(async () => {
@@ -150,15 +134,11 @@ onMounted(async () => {
     price: item.price || (Math.random() * 800 + 50).toFixed(0),
     originPrice: item.originPrice || (Math.random() * 1000 + 500).toFixed(0)
   }))
-
-  // 首次加载推荐流
   loadMore()
-
   nextTick(() => {
     if (bannerScrollRef.value) bannerScrollRef.value.scrollLeft = bannerScrollRef.value.clientWidth * 1
     startBannerTimer()
   })
-
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
@@ -167,29 +147,18 @@ onUnmounted(() => {
   stopBannerTimer()
 })
 
-// 🎯 核心修复：数据源隔离
 const filteredItems = computed(() => {
-  // 判断是否处于"无限加载模式"
-  const isInfiniteMode = activeTab.value === '推荐' && !searchQuery.value.trim();
-
-  // 如果是推荐且无搜索，使用包含无限加载数据的 displayItems
-  // 如果是其他分类或有搜索，直接使用最原始的 allItems 题库，保证数据唯一不重复
-  let items = isInfiniteMode ? displayItems.value : allItems.value;
-  
-  // 分类过滤
+  const isInfiniteMode = activeTab.value === '推荐' && !searchQuery.value.trim()
+  let items = isInfiniteMode ? displayItems.value : allItems.value
   if (activeTab.value !== '推荐') {
     items = items.filter(i => i.category === categoryMap[activeTab.value])
   } else if (isInfiniteMode) {
-    // 即使在推荐流，displayItems 里也不该有 general（在 loadMore 里过滤了，但为了保险再过滤一次）
     items = items.filter(i => i.category !== 'general')
   }
-
-  // 搜索过滤
   if (searchQuery.value.trim()) {
     const query = searchQuery.value.trim().toLowerCase()
     items = items.filter(i => i.title.toLowerCase().includes(query))
   }
-
   return items
 })
 
@@ -202,7 +171,6 @@ const goDetail = (id: string) => { router.push(`/detail/${id}`) }
       <div class="px-4 h-16 flex items-center gap-4 max-w-7xl mx-auto">
         <h1 class="text-xl font-black tracking-tighter md:hidden">PORTFOLIO<span class="text-primary">.</span></h1>
         <div class="flex-1 relative max-w-xl mx-auto">
-          <!-- 绑定 change 事件或 watch 来触发滚动 -->
           <input v-model="searchQuery" @change="handleTabOrSearchChange" type="text" placeholder="搜索作品、商品..." class="w-full bg-white border border-gray-200 rounded-full px-6 py-2.5 text-base font-light outline-none focus:border-primary transition-all" />
           <span class="absolute right-5 top-1/2 -translate-y-1/2 text-gray-400 text-base">🔍</span>
         </div>
@@ -212,15 +180,13 @@ const goDetail = (id: string) => { router.push(`/detail/${id}`) }
       </div>
     </header>
 
-    <!-- Banner 区域 (仅在推荐且无搜索时显示，提升专注度) -->
     <div v-if="activeTab === '推荐' && !searchQuery.trim()" class="max-w-7xl mx-auto px-4 md:px-12 mt-6">
       <div class="group relative w-full aspect-[21/9] md:aspect-[213/100] rounded-2xl overflow-hidden border border-gray-200 bg-white" @mouseenter="stopBannerTimer" @mouseleave="startBannerTimer" @touchstart="stopBannerTimer" @touchend="startBannerTimer">
         <div ref="bannerScrollRef" @scroll="onBannerScroll" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory hide-scrollbar h-full">
           <div v-for="(banner, idx) in loopBanners" :key="idx" class="w-full h-full shrink-0 snap-center relative cursor-pointer" @click="goDetail(banner.linkId)">
             <img :src="banner.img" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent md:block hidden"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent hidden md:block"></div>
             <div class="absolute bottom-8 left-8 text-white hidden md:block">
-              <!-- 仅显示 Explore More 按钮，移除了标题 -->
               <div class="text-base font-light opacity-90 bg-white/20 backdrop-blur-md px-5 py-2 rounded-full inline-block border border-white/30">Explore More →</div>
             </div>
           </div>
@@ -233,10 +199,9 @@ const goDetail = (id: string) => { router.push(`/detail/${id}`) }
       </div>
     </div>
 
-    <!-- 商品瀑布流区域 -->
     <main class="p-2 md:px-12 columns-2 md:columns-3 lg:columns-4 gap-2 md:gap-5 max-w-7xl mx-auto mt-4 md:mt-10">
-      <div 
-        v-for="(item, index) in filteredItems" :key="`${item.id}-${index}`" 
+      <div
+        v-for="(item, index) in filteredItems" :key="`${item.id}-${index}`"
         @click="goDetail(item.id)"
         v-reveal
         :data-delay="(index % 4) * 50"
@@ -259,14 +224,11 @@ const goDetail = (id: string) => { router.push(`/detail/${id}`) }
           </div>
         </div>
       </div>
-      
-      <!-- 智能空状态提示 -->
       <div v-if="filteredItems.length === 0 && !isLoading" class="col-span-full text-center py-20 text-gray-400 font-light tracking-widest text-base">
         {{ searchQuery.trim() ? '暂未收录该商品，感谢支持' : '该分类下暂无作品' }}
       </div>
     </main>
 
-    <!-- 仅在"推荐"且"无搜索"时显示的无限加载指示器 -->
     <div v-if="isLoading && activeTab === '推荐' && !searchQuery.trim()" class="flex justify-center items-center py-10 gap-3 text-text-light font-light tracking-widest text-sm">
       <div class="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
       <span>正在探索更多灵感...</span>
