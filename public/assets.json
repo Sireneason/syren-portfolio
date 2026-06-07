@@ -3,554 +3,537 @@
     "id": "img-201Archive",
     "category": "clothing",
     "type": "image",
-    "cover": "/media/images/201Archive/cover.png",
+    "cover": "/media/images/201Archive/cover.webp",
     "title": "【201 ARCHIVE】蓝色羽绒服潮流保暖经典百搭复古手工高定限量奢华材质升级复古潮流设计",
     "mainMedia": [
-      "/media/images/201Archive/main-1.png",
-      "/media/images/201Archive/main-2.png",
-      "/media/images/201Archive/main-3.png",
-      "/media/images/201Archive/main-4.png"
+      "/media/images/201Archive/main-1.webp",
+      "/media/images/201Archive/main-2.webp",
+      "/media/images/201Archive/main-3.webp",
+      "/media/images/201Archive/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/201Archive/detail-1.png",
-      "/media/images/201Archive/detail-2.png",
-      "/media/images/201Archive/detail-3.png",
-      "/media/images/201Archive/detail-4.png",
-      "/media/images/201Archive/detail-5.png",
-      "/media/images/201Archive/detail-6.png",
-      "/media/images/201Archive/detail-7.png",
-      "/media/images/201Archive/detail-8.png"
+      "/media/images/201Archive/detail-1.webp",
+      "/media/images/201Archive/detail-2.webp",
+      "/media/images/201Archive/detail-3.webp",
+      "/media/images/201Archive/detail-4.webp",
+      "/media/images/201Archive/detail-5.webp",
+      "/media/images/201Archive/detail-6.webp",
+      "/media/images/201Archive/detail-7.webp",
+      "/media/images/201Archive/detail-8.webp"
     ],
-    "bannerImg": "/media/images/201Archive/banner.png"
+    "bannerImg": "/media/images/201Archive/banner.webp"
   },
   {
     "id": "img-aloeveragel",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/aloeveragel/cover.png",
+    "cover": "/media/images/aloeveragel/cover.webp",
     "title": "L-DA 95%库拉索芦荟胶 舒缓镇静保湿 自然精萃 晒后修复 敏感肌可用 奢华呵护",
     "mainMedia": [
-      "/media/images/aloeveragel/main-1.png",
-      "/media/images/aloeveragel/main-2.png",
-      "/media/images/aloeveragel/main-3.png",
-      "/media/images/aloeveragel/main-4.png",
-      "/media/images/aloeveragel/main-8.png"
+      "/media/images/aloeveragel/main-1.webp",
+      "/media/images/aloeveragel/main-2.webp",
+      "/media/images/aloeveragel/main-3.webp",
+      "/media/images/aloeveragel/main-4.webp",
+      "/media/images/aloeveragel/main-8.webp"
     ],
     "detailMedia": [
-      "/media/images/aloeveragel/detail-1.png",
-      "/media/images/aloeveragel/detail-2.png",
-      "/media/images/aloeveragel/detail-3.png",
-      "/media/images/aloeveragel/detail-4.png",
-      "/media/images/aloeveragel/detail-5.png",
-      "/media/images/aloeveragel/detail-6.png",
-      "/media/images/aloeveragel/detail-7.png",
-      "/media/images/aloeveragel/detail-9.png",
-      "/media/images/aloeveragel/detail-10.png"
+      "/media/images/aloeveragel/detail-1.webp",
+      "/media/images/aloeveragel/detail-2.webp",
+      "/media/images/aloeveragel/detail-3.webp",
+      "/media/images/aloeveragel/detail-4.webp",
+      "/media/images/aloeveragel/detail-5.webp",
+      "/media/images/aloeveragel/detail-6.webp",
+      "/media/images/aloeveragel/detail-7.webp",
+      "/media/images/aloeveragel/detail-9.webp",
+      "/media/images/aloeveragel/detail-10.webp"
     ]
   },
   {
     "id": "img-baixi",
     "category": "clothing",
     "type": "image",
-    "cover": "/media/images/baixi/cover.png",
+    "cover": "/media/images/baixi/cover.webp",
     "title": "【白隙】性冷淡高知女性日系女衬衫露肩拼接针织 100%埃及长绒棉亚麻 假日简约文艺风格",
     "mainMedia": [
-      "/media/images/baixi/main-1.png",
-      "/media/images/baixi/main-2.png",
-      "/media/images/baixi/main-3.png",
-      "/media/images/baixi/main-4.jpg"
+      "/media/images/baixi/main-1.webp",
+      "/media/images/baixi/main-2.webp",
+      "/media/images/baixi/main-3.webp",
+      "/media/images/baixi/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/baixi/detail-1.png",
-      "/media/images/baixi/detail-2.png",
-      "/media/images/baixi/detail-3.png",
-      "/media/images/baixi/detail-4.png",
-      "/media/images/baixi/detail-5.png",
-      "/media/images/baixi/detail-6.png",
-      "/media/images/baixi/detail-7.png"
+      "/media/images/baixi/detail-1.webp",
+      "/media/images/baixi/detail-2.webp",
+      "/media/images/baixi/detail-3.webp",
+      "/media/images/baixi/detail-4.webp",
+      "/media/images/baixi/detail-5.webp",
+      "/media/images/baixi/detail-6.webp",
+      "/media/images/baixi/detail-7.webp"
     ],
-    "bannerImg": "/media/images/baixi/banner.png"
+    "bannerImg": "/media/images/baixi/banner.webp"
   },
   {
     "id": "img-downcoat",
     "category": "clothing",
     "type": "image",
-    "cover": "/media/images/downcoat/cover.png",
+    "cover": "/media/images/downcoat/cover.webp",
     "title": "浅米色短款羽绒服女保暖ANDANIM粉色毛绒内衬纽扣拉链双设计休闲时尚百搭",
     "mainMedia": [
-      "/media/images/downcoat/main-1.png",
-      "/media/images/downcoat/main-2.png",
-      "/media/images/downcoat/main-3.png",
-      "/media/images/downcoat/main-4.jpg"
+      "/media/images/downcoat/main-1.webp",
+      "/media/images/downcoat/main-2.webp",
+      "/media/images/downcoat/main-3.webp",
+      "/media/images/downcoat/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/downcoat/detail-1.jpg",
-      "/media/images/downcoat/detail-2.jpg",
-      "/media/images/downcoat/detail-3.jpg",
-      "/media/images/downcoat/detail-4.jpg",
-      "/media/images/downcoat/detail-5.jpg",
-      "/media/images/downcoat/detail-6.jpg",
-      "/media/images/downcoat/detail-7.jpg",
-      "/media/images/downcoat/detail-8.jpg",
-      "/media/images/downcoat/detail-9.jpg",
-      "/media/images/downcoat/detail-10.jpg",
-      "/media/images/downcoat/detail-11.jpg",
-      "/media/images/downcoat/detail-12.jpg",
-      "/media/images/downcoat/detail-13.jpg",
-      "/media/images/downcoat/detail-14.jpg"
+      "/media/images/downcoat/detail-1.webp",
+      "/media/images/downcoat/detail-2.webp",
+      "/media/images/downcoat/detail-3.webp",
+      "/media/images/downcoat/detail-4.webp",
+      "/media/images/downcoat/detail-5.webp",
+      "/media/images/downcoat/detail-6.webp",
+      "/media/images/downcoat/detail-7.webp",
+      "/media/images/downcoat/detail-8.webp",
+      "/media/images/downcoat/detail-9.webp",
+      "/media/images/downcoat/detail-10.webp",
+      "/media/images/downcoat/detail-11.webp",
+      "/media/images/downcoat/detail-12.webp",
+      "/media/images/downcoat/detail-13.webp",
+      "/media/images/downcoat/detail-14.webp"
     ]
   },
   {
     "id": "img-downcoat02",
     "category": "clothing",
     "type": "image",
-    "cover": "/media/images/downcoat02/banner.png",
+    "cover": "/media/images/downcoat02/banner.webp",
     "title": "短款灰色羽绒服 时尚修身设计 轻便保暖面料 秋冬日常穿搭 百搭休闲风格",
     "mainMedia": [
-      "/media/images/downcoat02/main-1.png",
-      "/media/images/downcoat02/main-2.png",
-      "/media/images/downcoat02/main-3.png",
-      "/media/images/downcoat02/main-4.jpeg"
+      "/media/images/downcoat02/main-1.webp",
+      "/media/images/downcoat02/main-2.webp",
+      "/media/images/downcoat02/main-3.webp",
+      "/media/images/downcoat02/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/downcoat02/detail-1.png",
-      "/media/images/downcoat02/detail-2.png",
-      "/media/images/downcoat02/detail-3.png",
-      "/media/images/downcoat02/detail-4.png",
-      "/media/images/downcoat02/detail-5.png",
-      "/media/images/downcoat02/detail-6.png"
+      "/media/images/downcoat02/detail-1.webp",
+      "/media/images/downcoat02/detail-2.webp",
+      "/media/images/downcoat02/detail-3.webp",
+      "/media/images/downcoat02/detail-4.webp",
+      "/media/images/downcoat02/detail-5.webp",
+      "/media/images/downcoat02/detail-6.webp"
     ],
-    "bannerImg": "/media/images/downcoat02/banner.png"
+    "bannerImg": "/media/images/downcoat02/banner.webp"
   },
   {
     "id": "img-hydratingcream",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/hydratingcream/cover.png",
+    "cover": "/media/images/hydratingcream/cover.webp",
     "title": "补水霜水润保湿改善干燥清爽啫喱质地国货优选日常护肤办公户外多用",
     "mainMedia": [
-      "/media/images/hydratingcream/main-1.png",
-      "/media/images/hydratingcream/main-2.png",
-      "/media/images/hydratingcream/main-4.jpg",
-      "/media/images/hydratingcream/main-5.jpg"
+      "/media/images/hydratingcream/main-1.webp",
+      "/media/images/hydratingcream/main-2.webp",
+      "/media/images/hydratingcream/main-4.webp",
+      "/media/images/hydratingcream/main-5.webp"
     ],
     "detailMedia": [
-      "/media/images/hydratingcream/detail-1.png",
-      "/media/images/hydratingcream/detail-2.png",
-      "/media/images/hydratingcream/detail-3.png",
-      "/media/images/hydratingcream/detail-4.png",
-      "/media/images/hydratingcream/detail-5.png",
-      "/media/images/hydratingcream/detail-6.png",
-      "/media/images/hydratingcream/detail-7.png",
-      "/media/images/hydratingcream/detail-8.png"
+      "/media/images/hydratingcream/detail-1.webp",
+      "/media/images/hydratingcream/detail-2.webp",
+      "/media/images/hydratingcream/detail-3.webp",
+      "/media/images/hydratingcream/detail-4.webp",
+      "/media/images/hydratingcream/detail-5.webp",
+      "/media/images/hydratingcream/detail-6.webp",
+      "/media/images/hydratingcream/detail-7.webp",
+      "/media/images/hydratingcream/detail-8.webp"
     ]
   },
   {
     "id": "img-loquat",
     "category": "daily",
     "type": "image",
-    "cover": "/media/images/loquat/cover.png",
+    "cover": "/media/images/loquat/cover.webp",
     "title": "大五星枇杷爆甜现摘新鲜北纬30度黄金产区30年匠心培育高糖度富硒水果礼盒装",
     "mainMedia": [
-      "/media/images/loquat/main-1.png",
-      "/media/images/loquat/main-2.png",
-      "/media/images/loquat/main-3.png"
+      "/media/images/loquat/main-1.webp",
+      "/media/images/loquat/main-2.webp",
+      "/media/images/loquat/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/loquat/detail-1.png",
-      "/media/images/loquat/detail-2.png",
-      "/media/images/loquat/detail-3.png",
-      "/media/images/loquat/detail-4.png",
-      "/media/images/loquat/detail-5.png",
-      "/media/images/loquat/detail-6.png",
-      "/media/images/loquat/detail-7.png",
-      "/media/images/loquat/detail-8.png"
+      "/media/images/loquat/detail-1.webp",
+      "/media/images/loquat/detail-2.webp",
+      "/media/images/loquat/detail-3.webp",
+      "/media/images/loquat/detail-4.webp",
+      "/media/images/loquat/detail-5.webp",
+      "/media/images/loquat/detail-6.webp",
+      "/media/images/loquat/detail-7.webp",
+      "/media/images/loquat/detail-8.webp"
     ]
   },
   {
     "id": "img-MQ",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/MQ/cover.png",
+    "cover": "/media/images/MQ/cover.webp",
     "title": "【MQ Magnifique】全能保湿啫喱 一瓶多效清爽配方 植萃舒缓 全天候保湿 适合多种肤质",
     "mainMedia": [
-      "/media/images/MQ/main-1.png",
-      "/media/images/MQ/main-2.png",
-      "/media/images/MQ/main-3.png"
+      "/media/images/MQ/main-1.webp",
+      "/media/images/MQ/main-2.webp",
+      "/media/images/MQ/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/MQ/detail-1.png",
-      "/media/images/MQ/detail-2.png",
-      "/media/images/MQ/detail-3.png",
-      "/media/images/MQ/detail-4.png",
-      "/media/images/MQ/detail-5.png",
-      "/media/images/MQ/detail-6.png",
-      "/media/images/MQ/detail-7.png"
+      "/media/images/MQ/detail-1.webp",
+      "/media/images/MQ/detail-2.webp",
+      "/media/images/MQ/detail-3.webp",
+      "/media/images/MQ/detail-4.webp",
+      "/media/images/MQ/detail-5.webp",
+      "/media/images/MQ/detail-6.webp",
+      "/media/images/MQ/detail-7.webp"
     ],
-    "bannerImg": "/media/images/MQ/banner.png"
+    "bannerImg": "/media/images/MQ/banner.webp"
   },
   {
     "id": "img-MQO",
     "category": "crossborder",
     "type": "image",
-    "cover": "/media/images/MQO/banner.png",
+    "cover": "/media/images/MQO/banner.webp",
     "title": "【MQ Magnifique】 all-in-one gel 3-in-1 formula hyaluronic acid edelweiss extract lightweight texture multi-functional skincare",
     "mainMedia": [
-      "/media/images/MQO/main-1.png",
-      "/media/images/MQO/main-2.png"
+      "/media/images/MQO/main-1.webp",
+      "/media/images/MQO/main-2.webp"
     ],
     "detailMedia": [
-      "/media/images/MQO/detail-1.png",
-      "/media/images/MQO/detail-2.png",
-      "/media/images/MQO/detail-3.png",
-      "/media/images/MQO/detail-4.png",
-      "/media/images/MQO/detail-5.png",
-      "/media/images/MQO/detail-6.png"
+      "/media/images/MQO/detail-1.webp",
+      "/media/images/MQO/detail-2.webp",
+      "/media/images/MQO/detail-3.webp",
+      "/media/images/MQO/detail-4.webp",
+      "/media/images/MQO/detail-5.webp",
+      "/media/images/MQO/detail-6.webp"
     ],
-    "bannerImg": "/media/images/MQO/banner.png"
-  },
-  {
-    "id": "img-nailclipper",
-    "category": "daily",
-    "type": "image",
-    "cover": "/media/images/nailclipper/2060774688761581568.png",
-    "title": "nailclipper",
-    "mainMedia": [
-      "/media/images/nailclipper/2060774710450327552.png",
-      "/media/images/nailclipper/2060778151067258880.png",
-      "/media/images/nailclipper/2060778171980058624.png",
-      "/media/images/nailclipper/2060778186236497920.png",
-      "/media/images/nailclipper/2060779788620009472.png",
-      "/media/images/nailclipper/2060779811478966272.png",
-      "/media/images/nailclipper/2060900058609487872.png"
-    ],
-    "detailMedia": []
+    "bannerImg": "/media/images/MQO/banner.webp"
   },
   {
     "id": "img-OHBT",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/OHBT/cover.png",
+    "cover": "/media/images/OHBT/cover.webp",
     "title": "【OHBT】377专利美白沐浴露 烟酰胺成分 28天提亮实证 丝滑乳霜质地美白润肤奢华体验",
     "mainMedia": [
-      "/media/images/OHBT/main-1.png",
-      "/media/images/OHBT/main-2.png",
-      "/media/images/OHBT/main-3.png",
-      "/media/images/OHBT/main-4.png"
+      "/media/images/OHBT/main-1.webp",
+      "/media/images/OHBT/main-2.webp",
+      "/media/images/OHBT/main-3.webp",
+      "/media/images/OHBT/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/OHBT/detail-1.png",
-      "/media/images/OHBT/detail-2.png",
-      "/media/images/OHBT/detail-3.png",
-      "/media/images/OHBT/detail-4.png",
-      "/media/images/OHBT/detail-5.png",
-      "/media/images/OHBT/detail-6.png",
-      "/media/images/OHBT/detail-7.png",
-      "/media/images/OHBT/detail-8.png"
+      "/media/images/OHBT/detail-1.webp",
+      "/media/images/OHBT/detail-2.webp",
+      "/media/images/OHBT/detail-3.webp",
+      "/media/images/OHBT/detail-4.webp",
+      "/media/images/OHBT/detail-5.webp",
+      "/media/images/OHBT/detail-6.webp",
+      "/media/images/OHBT/detail-7.webp",
+      "/media/images/OHBT/detail-8.webp"
     ],
-    "bannerImg": "/media/images/OHBT/banner.png"
+    "bannerImg": "/media/images/OHBT/banner.webp"
   },
   {
     "id": "img-OHBT2",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/OHBT2/cover.png",
+    "cover": "/media/images/OHBT2/cover.webp",
     "title": "【OHBT】 377专利美白沐浴露 源头抑黑4维焕白 28天实证提亮 丝滑乳霜质地 烟酰胺成分",
     "mainMedia": [
-      "/media/images/OHBT2/main-1.png",
-      "/media/images/OHBT2/main-2.png",
-      "/media/images/OHBT2/main-3.png"
+      "/media/images/OHBT2/main-1.webp",
+      "/media/images/OHBT2/main-2.webp",
+      "/media/images/OHBT2/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/OHBT2/detail-1.png",
-      "/media/images/OHBT2/detail-2.png",
-      "/media/images/OHBT2/detail-3.png",
-      "/media/images/OHBT2/detail-4.png",
-      "/media/images/OHBT2/detail-5.png",
-      "/media/images/OHBT2/detail-6.png",
-      "/media/images/OHBT2/detail-7.png",
-      "/media/images/OHBT2/detail-8.png"
+      "/media/images/OHBT2/detail-1.webp",
+      "/media/images/OHBT2/detail-2.webp",
+      "/media/images/OHBT2/detail-3.webp",
+      "/media/images/OHBT2/detail-4.webp",
+      "/media/images/OHBT2/detail-5.webp",
+      "/media/images/OHBT2/detail-6.webp",
+      "/media/images/OHBT2/detail-7.webp",
+      "/media/images/OHBT2/detail-8.webp"
     ]
   },
   {
     "id": "img-pear",
     "category": "daily",
     "type": "image",
-    "cover": "/media/images/pear/cover.png",
+    "cover": "/media/images/pear/cover.webp",
     "title": "【棠雪】初见雪梨 北纬37度富硒雪梨 脆甜多汁无渣 16.2度高甜度 海拔860米三十年树龄鲜果 礼盒装",
     "mainMedia": [
-      "/media/images/pear/main-1.png",
-      "/media/images/pear/main-2.png",
-      "/media/images/pear/main-3.png"
+      "/media/images/pear/main-1.webp",
+      "/media/images/pear/main-2.webp",
+      "/media/images/pear/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/pear/detail-1.png",
-      "/media/images/pear/detail-2.png",
-      "/media/images/pear/detail-3.png",
-      "/media/images/pear/detail-4.png",
-      "/media/images/pear/detail-5.png",
-      "/media/images/pear/detail-6.png",
-      "/media/images/pear/detail-7.png",
-      "/media/images/pear/detail-8.png",
-      "/media/images/pear/detail-9.png",
-      "/media/images/pear/detail-10.png"
+      "/media/images/pear/detail-1.webp",
+      "/media/images/pear/detail-2.webp",
+      "/media/images/pear/detail-3.webp",
+      "/media/images/pear/detail-4.webp",
+      "/media/images/pear/detail-5.webp",
+      "/media/images/pear/detail-6.webp",
+      "/media/images/pear/detail-7.webp",
+      "/media/images/pear/detail-8.webp",
+      "/media/images/pear/detail-9.webp",
+      "/media/images/pear/detail-10.webp"
     ],
-    "bannerImg": "/media/images/pear/banner.png"
+    "bannerImg": "/media/images/pear/banner.webp"
   },
   {
     "id": "img-ring",
     "category": "clothing",
     "type": "image",
-    "cover": "/media/images/ring/cover.png",
+    "cover": "/media/images/ring/cover.webp",
     "title": "【花间絮语】999银戒指小众精致花朵造型自然灵动花卉元素素雅设计指尖温柔饰品",
     "mainMedia": [
-      "/media/images/ring/main-1.png",
-      "/media/images/ring/main-2.png",
-      "/media/images/ring/main-3.png"
+      "/media/images/ring/main-1.webp",
+      "/media/images/ring/main-2.webp",
+      "/media/images/ring/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/ring/detail-1.png",
-      "/media/images/ring/detail-2.png",
-      "/media/images/ring/detail-3.png",
-      "/media/images/ring/detail-4.png",
-      "/media/images/ring/detail-5.png",
-      "/media/images/ring/detail-6.png",
-      "/media/images/ring/detail-7.png"
+      "/media/images/ring/detail-1.webp",
+      "/media/images/ring/detail-2.webp",
+      "/media/images/ring/detail-3.webp",
+      "/media/images/ring/detail-4.webp",
+      "/media/images/ring/detail-5.webp",
+      "/media/images/ring/detail-6.webp",
+      "/media/images/ring/detail-7.webp"
     ]
   },
   {
     "id": "img-savondelily",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/savondelily/cover.png",
+    "cover": "/media/images/savondelily/cover.webp",
     "title": "SAVON DE LILY萨汶之铃淡香水清新皂感花香调持久留香简约设计多场景适用",
     "mainMedia": [
-      "/media/images/savondelily/main-1.png",
-      "/media/images/savondelily/main-2.png",
-      "/media/images/savondelily/main-3.png"
+      "/media/images/savondelily/main-1.webp",
+      "/media/images/savondelily/main-2.webp",
+      "/media/images/savondelily/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/savondelily/detail-1.png",
-      "/media/images/savondelily/detail-2.png",
-      "/media/images/savondelily/detail-3.png",
-      "/media/images/savondelily/detail-4.png",
-      "/media/images/savondelily/detail-5.png",
-      "/media/images/savondelily/detail-6.png",
-      "/media/images/savondelily/detail-7.png",
-      "/media/images/savondelily/detail-8.png",
-      "/media/images/savondelily/detail-9.png",
-      "/media/images/savondelily/detail-10.png"
+      "/media/images/savondelily/detail-1.webp",
+      "/media/images/savondelily/detail-2.webp",
+      "/media/images/savondelily/detail-3.webp",
+      "/media/images/savondelily/detail-4.webp",
+      "/media/images/savondelily/detail-5.webp",
+      "/media/images/savondelily/detail-6.webp",
+      "/media/images/savondelily/detail-7.webp",
+      "/media/images/savondelily/detail-8.webp",
+      "/media/images/savondelily/detail-9.webp",
+      "/media/images/savondelily/detail-10.webp"
     ],
-    "bannerImg": "/media/images/savondelily/banner.png"
+    "bannerImg": "/media/images/savondelily/banner.webp"
   },
   {
     "id": "img-suncream",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/suncream/cover.png",
+    "cover": "/media/images/suncream/cover.webp",
     "title": "瑞士La Swiss Derm水感防晒霜 全光谱防护8倍防晒力 12小时长效 轻透无负担 妆前隔离",
     "mainMedia": [
-      "/media/images/suncream/main-1.png",
-      "/media/images/suncream/main-2.png",
-      "/media/images/suncream/main-3.png",
-      "/media/images/suncream/main-4.png"
+      "/media/images/suncream/main-1.webp",
+      "/media/images/suncream/main-2.webp",
+      "/media/images/suncream/main-3.webp",
+      "/media/images/suncream/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/suncream/detail-1.png",
-      "/media/images/suncream/detail-2.png",
-      "/media/images/suncream/detail-3.png",
-      "/media/images/suncream/detail-4.png",
-      "/media/images/suncream/detail-5.png",
-      "/media/images/suncream/detail-6.png",
-      "/media/images/suncream/detail-7.png",
-      "/media/images/suncream/detail-8.png"
+      "/media/images/suncream/detail-1.webp",
+      "/media/images/suncream/detail-2.webp",
+      "/media/images/suncream/detail-3.webp",
+      "/media/images/suncream/detail-4.webp",
+      "/media/images/suncream/detail-5.webp",
+      "/media/images/suncream/detail-6.webp",
+      "/media/images/suncream/detail-7.webp",
+      "/media/images/suncream/detail-8.webp"
     ],
-    "bannerImg": "/media/images/suncream/banner.png"
+    "bannerImg": "/media/images/suncream/banner.webp"
   },
   {
     "id": "img-Toiletbrush",
     "category": "daily",
     "type": "image",
-    "cover": "/media/images/Toiletbrush/cover.png",
+    "cover": "/media/images/Toiletbrush/cover.webp",
     "title": "【Form·One】家居卫浴马桶搋子极简美学设计耐用高端材质强力吸附多功能清洁工具",
     "mainMedia": [
-      "/media/images/Toiletbrush/main-1.png",
-      "/media/images/Toiletbrush/main-2.png",
-      "/media/images/Toiletbrush/main-3.png"
+      "/media/images/Toiletbrush/main-1.webp",
+      "/media/images/Toiletbrush/main-2.webp",
+      "/media/images/Toiletbrush/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/Toiletbrush/detail-1.png",
-      "/media/images/Toiletbrush/detail-2.png",
-      "/media/images/Toiletbrush/detail-3.png",
-      "/media/images/Toiletbrush/detail-4.png",
-      "/media/images/Toiletbrush/detail-5.png",
-      "/media/images/Toiletbrush/detail-6.png",
-      "/media/images/Toiletbrush/detail-7.png",
-      "/media/images/Toiletbrush/detail-8.png"
+      "/media/images/Toiletbrush/detail-1.webp",
+      "/media/images/Toiletbrush/detail-2.webp",
+      "/media/images/Toiletbrush/detail-3.webp",
+      "/media/images/Toiletbrush/detail-4.webp",
+      "/media/images/Toiletbrush/detail-5.webp",
+      "/media/images/Toiletbrush/detail-6.webp",
+      "/media/images/Toiletbrush/detail-7.webp",
+      "/media/images/Toiletbrush/detail-8.webp"
     ]
   },
   {
     "id": "img-trousers",
     "category": "clothing",
     "type": "image",
-    "cover": "/media/images/trousers/cover.png",
+    "cover": "/media/images/trousers/cover.webp",
     "title": "浅灰色针织开衫 休闲舒适户外穿搭 清晰纹理纽扣设计 春秋薄款女式毛衣",
     "mainMedia": [
-      "/media/images/trousers/main-1.png",
-      "/media/images/trousers/main-2.png",
-      "/media/images/trousers/main-3.png",
-      "/media/images/trousers/main-4.jpeg"
+      "/media/images/trousers/main-1.webp",
+      "/media/images/trousers/main-2.webp",
+      "/media/images/trousers/main-3.webp",
+      "/media/images/trousers/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/trousers/detail-1.jpg",
-      "/media/images/trousers/detail-2.jpg",
-      "/media/images/trousers/detail-3.jpg",
-      "/media/images/trousers/detail-4.jpg",
-      "/media/images/trousers/detail-5.jpg",
-      "/media/images/trousers/detail-6.jpg",
-      "/media/images/trousers/detail-7.jpg",
-      "/media/images/trousers/detail-8.jpg",
-      "/media/images/trousers/detail-9.jpg",
-      "/media/images/trousers/detail-10.jpg"
+      "/media/images/trousers/detail-1.webp",
+      "/media/images/trousers/detail-2.webp",
+      "/media/images/trousers/detail-3.webp",
+      "/media/images/trousers/detail-4.webp",
+      "/media/images/trousers/detail-5.webp",
+      "/media/images/trousers/detail-6.webp",
+      "/media/images/trousers/detail-7.webp",
+      "/media/images/trousers/detail-8.webp",
+      "/media/images/trousers/detail-9.webp",
+      "/media/images/trousers/detail-10.webp"
     ]
   },
   {
     "id": "img-vanishingcream",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/vanishingcream/cover.png",
+    "cover": "/media/images/vanishingcream/cover.webp",
     "title": "老上海经典国货雪花膏 柔润滋养保湿 东方美肤智慧 全家适用 复古香氛 美颜传承",
     "mainMedia": [
-      "/media/images/vanishingcream/main-1.png",
-      "/media/images/vanishingcream/main-2.png",
-      "/media/images/vanishingcream/main-3.png",
-      "/media/images/vanishingcream/main-4.jpg"
+      "/media/images/vanishingcream/main-1.webp",
+      "/media/images/vanishingcream/main-2.webp",
+      "/media/images/vanishingcream/main-3.webp",
+      "/media/images/vanishingcream/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/vanishingcream/detail-1.png",
-      "/media/images/vanishingcream/detail-2.png",
-      "/media/images/vanishingcream/detail-3.png",
-      "/media/images/vanishingcream/detail-4.png",
-      "/media/images/vanishingcream/detail-5.png",
-      "/media/images/vanishingcream/detail-6.png",
-      "/media/images/vanishingcream/detail-7.jpg",
-      "/media/images/vanishingcream/detail-8.png"
+      "/media/images/vanishingcream/detail-1.webp",
+      "/media/images/vanishingcream/detail-2.webp",
+      "/media/images/vanishingcream/detail-3.webp",
+      "/media/images/vanishingcream/detail-4.webp",
+      "/media/images/vanishingcream/detail-5.webp",
+      "/media/images/vanishingcream/detail-6.webp",
+      "/media/images/vanishingcream/detail-7.webp",
+      "/media/images/vanishingcream/detail-8.webp"
     ]
   },
   {
     "id": "img-waterpurfier",
     "category": "daily",
     "type": "image",
-    "cover": "/media/images/waterpurfier/cover.png",
+    "cover": "/media/images/waterpurfier/cover.webp",
     "title": "五级精滤食品级全不锈钢净水器 层层净化保留矿物质 304食品级材质 2.0L/min大通量 壁挂节省空间",
     "mainMedia": [
-      "/media/images/waterpurfier/main-1.png",
-      "/media/images/waterpurfier/main-2.png",
-      "/media/images/waterpurfier/main-3.png"
+      "/media/images/waterpurfier/main-1.webp",
+      "/media/images/waterpurfier/main-2.webp",
+      "/media/images/waterpurfier/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/waterpurfier/detail-1.png",
-      "/media/images/waterpurfier/detail-2.png",
-      "/media/images/waterpurfier/detail-3.png",
-      "/media/images/waterpurfier/detail-4.png",
-      "/media/images/waterpurfier/detail-5.png",
-      "/media/images/waterpurfier/detail-6.png",
-      "/media/images/waterpurfier/detail-7.png"
+      "/media/images/waterpurfier/detail-1.webp",
+      "/media/images/waterpurfier/detail-2.webp",
+      "/media/images/waterpurfier/detail-3.webp",
+      "/media/images/waterpurfier/detail-4.webp",
+      "/media/images/waterpurfier/detail-5.webp",
+      "/media/images/waterpurfier/detail-6.webp",
+      "/media/images/waterpurfier/detail-7.webp"
     ]
   },
   {
     "id": "img-WHSA",
     "category": "beauty",
     "type": "image",
-    "cover": "/media/images/WHSA/cover.png",
+    "cover": "/media/images/WHSA/cover.webp",
     "title": "日本进口【佇】植物系沐浴露 柚子扁柏白牡丹香氛沐浴液 夏日秋冬多季节可选",
     "mainMedia": [
-      "/media/images/WHSA/main-1.png",
-      "/media/images/WHSA/main-2.png",
-      "/media/images/WHSA/main-3.png",
-      "/media/images/WHSA/main-4.jpg"
+      "/media/images/WHSA/main-1.webp",
+      "/media/images/WHSA/main-2.webp",
+      "/media/images/WHSA/main-3.webp",
+      "/media/images/WHSA/main-4.webp"
     ],
     "detailMedia": [
-      "/media/images/WHSA/detail-1.png",
-      "/media/images/WHSA/detail-2.png",
-      "/media/images/WHSA/detail-3.png",
-      "/media/images/WHSA/detail-4.png",
-      "/media/images/WHSA/detail-5.png",
-      "/media/images/WHSA/detail-6.png",
-      "/media/images/WHSA/detail-7.png",
-      "/media/images/WHSA/detail-8.png"
+      "/media/images/WHSA/detail-1.webp",
+      "/media/images/WHSA/detail-2.webp",
+      "/media/images/WHSA/detail-3.webp",
+      "/media/images/WHSA/detail-4.webp",
+      "/media/images/WHSA/detail-5.webp",
+      "/media/images/WHSA/detail-6.webp",
+      "/media/images/WHSA/detail-7.webp",
+      "/media/images/WHSA/detail-8.webp"
     ]
   },
   {
     "id": "img-WHSAR",
     "category": "crossborder",
     "type": "image",
-    "cover": "/media/images/WHSAR/cover.png",
+    "cover": "/media/images/WHSAR/cover.webp",
     "title": "WHSA душ гель аминокислоты пчелиный воск премиум аромат улучшение кожи от 3500 рублей",
     "mainMedia": [
-      "/media/images/WHSAR/main-1.png",
-      "/media/images/WHSAR/main-2.png",
-      "/media/images/WHSAR/main-3.png"
+      "/media/images/WHSAR/main-1.webp",
+      "/media/images/WHSAR/main-2.webp",
+      "/media/images/WHSAR/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/WHSAR/detail-1.png",
-      "/media/images/WHSAR/detail-2.png",
-      "/media/images/WHSAR/detail-3.png",
-      "/media/images/WHSAR/detail-4.png",
-      "/media/images/WHSAR/detail-5.png",
-      "/media/images/WHSAR/detail-6.png",
-      "/media/images/WHSAR/detail-7.png",
-      "/media/images/WHSAR/detail-8.png"
+      "/media/images/WHSAR/detail-1.webp",
+      "/media/images/WHSAR/detail-2.webp",
+      "/media/images/WHSAR/detail-3.webp",
+      "/media/images/WHSAR/detail-4.webp",
+      "/media/images/WHSAR/detail-5.webp",
+      "/media/images/WHSAR/detail-6.webp",
+      "/media/images/WHSAR/detail-7.webp",
+      "/media/images/WHSAR/detail-8.webp"
     ]
   },
   {
     "id": "img-Wiš'adel",
     "category": "clothing",
     "type": "image",
-    "cover": "/media/images/Wiš'adel/cover.png",
+    "cover": "/media/images/Wiš'adel/cover.webp",
     "title": "Wiš'adel短款微茧形连帽外套 自然简约平衡理念 高密斜纹面料 橄榄绿奶油白双色 双面可穿",
     "mainMedia": [
-      "/media/images/Wiš'adel/main-1.png",
-      "/media/images/Wiš'adel/main-2.png",
-      "/media/images/Wiš'adel/main-3.png",
-      "/media/images/Wiš'adel/main-4.png",
-      "/media/images/Wiš'adel/main-5.jpg",
-      "/media/images/Wiš'adel/main-6.jpg"
+      "/media/images/Wiš'adel/main-1.webp",
+      "/media/images/Wiš'adel/main-2.webp",
+      "/media/images/Wiš'adel/main-3.webp",
+      "/media/images/Wiš'adel/main-4.webp",
+      "/media/images/Wiš'adel/main-5.webp",
+      "/media/images/Wiš'adel/main-6.webp"
     ],
     "detailMedia": [
-      "/media/images/Wiš'adel/detail-1.png",
-      "/media/images/Wiš'adel/detail-2.png",
-      "/media/images/Wiš'adel/detail-3.png",
-      "/media/images/Wiš'adel/detail-4.png",
-      "/media/images/Wiš'adel/detail-5.png",
-      "/media/images/Wiš'adel/detail-6.png",
-      "/media/images/Wiš'adel/detail-7.png",
-      "/media/images/Wiš'adel/detail-8.png",
-      "/media/images/Wiš'adel/detail-9.png",
-      "/media/images/Wiš'adel/detail-10.png"
+      "/media/images/Wiš'adel/detail-1.webp",
+      "/media/images/Wiš'adel/detail-2.webp",
+      "/media/images/Wiš'adel/detail-3.webp",
+      "/media/images/Wiš'adel/detail-4.webp",
+      "/media/images/Wiš'adel/detail-5.webp",
+      "/media/images/Wiš'adel/detail-6.webp",
+      "/media/images/Wiš'adel/detail-7.webp",
+      "/media/images/Wiš'adel/detail-8.webp",
+      "/media/images/Wiš'adel/detail-9.webp",
+      "/media/images/Wiš'adel/detail-10.webp"
     ]
   },
   {
     "id": "img-wristband",
     "category": "crossborder",
     "type": "image",
-    "cover": "/media/images/wristband/cover.png",
+    "cover": "/media/images/wristband/cover.webp",
     "title": "猫耳ビーズアクセサリー 手漉き制作 たまもちゃん カラーバリエーション ギフトセット",
     "mainMedia": [
-      "/media/images/wristband/main-1.png",
-      "/media/images/wristband/main-2.png",
-      "/media/images/wristband/main-3.png"
+      "/media/images/wristband/main-1.webp",
+      "/media/images/wristband/main-2.webp",
+      "/media/images/wristband/main-3.webp"
     ],
     "detailMedia": [
-      "/media/images/wristband/detail-1.png",
-      "/media/images/wristband/detail-2.png",
-      "/media/images/wristband/detail-3.png",
-      "/media/images/wristband/detail-4.png",
-      "/media/images/wristband/detail-5.png",
-      "/media/images/wristband/detail-6.png",
-      "/media/images/wristband/detail-7.png",
-      "/media/images/wristband/detail-8.png"
+      "/media/images/wristband/detail-1.webp",
+      "/media/images/wristband/detail-2.webp",
+      "/media/images/wristband/detail-3.webp",
+      "/media/images/wristband/detail-4.webp",
+      "/media/images/wristband/detail-5.webp",
+      "/media/images/wristband/detail-6.webp",
+      "/media/images/wristband/detail-7.webp",
+      "/media/images/wristband/detail-8.webp"
     ],
-    "bannerImg": "/media/images/wristband/banner.png"
+    "bannerImg": "/media/images/wristband/banner.webp"
   }
 ]
