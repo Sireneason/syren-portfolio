@@ -123,6 +123,29 @@
     "bannerImg": "/media/images/downcoat02/banner.webp"
   },
   {
+    "id": "img-dress",
+    "category": "clothing",
+    "type": "image",
+    "cover": "/media/images/dress/cover.webp",
+    "title": "法式清冷感水雾蓝金属波光百褶裙高定微光轻盈藏肉闺蜜出街Look",
+    "mainMedia": [
+      "/media/images/dress/main-1.webp",
+      "/media/images/dress/main-2.webp",
+      "/media/images/dress/main-3.webp",
+      "/media/images/dress/main-4.webp"
+    ],
+    "detailMedia": [
+      "/media/images/dress/detail-1.webp",
+      "/media/images/dress/detail-2.webp",
+      "/media/images/dress/detail-3.webp",
+      "/media/images/dress/detail-4.webp",
+      "/media/images/dress/detail-5.webp",
+      "/media/images/dress/detail-6.webp",
+      "/media/images/dress/detail-7.webp",
+      "/media/images/dress/detail-8.webp"
+    ]
+  },
+  {
     "id": "img-hydratingcream",
     "category": "beauty",
     "type": "image",
@@ -325,6 +348,50 @@
       "/media/images/savondelily/detail-10.webp"
     ],
     "bannerImg": "/media/images/savondelily/banner.webp"
+  },
+  {
+    "id": "img-senka",
+    "category": "beauty",
+    "type": "image",
+    "cover": "/media/images/senka/cover.webp",
+    "title": "日本珊珂高级微密美容泡洗面奶去老废角质深层清洁毛孔不紧绷药用",
+    "mainMedia": [
+      "/media/images/senka/main-1.webp",
+      "/media/images/senka/main-2.webp",
+      "/media/images/senka/main-3.webp",
+      "/media/images/senka/main-4.webp"
+    ],
+    "detailMedia": [
+      "/media/images/senka/detail-1.webp",
+      "/media/images/senka/detail-2.webp",
+      "/media/images/senka/detail-3.webp",
+      "/media/images/senka/detail-4.webp",
+      "/media/images/senka/detail-5.webp",
+      "/media/images/senka/detail-6.webp",
+      "/media/images/senka/detail-7.webp"
+    ]
+  },
+  {
+    "id": "img-Shoes01",
+    "category": "clothing",
+    "type": "image",
+    "cover": "/media/images/Shoes01/cover.webp",
+    "title": "夏季潮牌高街机能风百搭白鞋男士解构撞色织带微孔蜂巢透气网面运动板鞋",
+    "mainMedia": [
+      "/media/images/Shoes01/main-1.webp",
+      "/media/images/Shoes01/main-2.webp",
+      "/media/images/Shoes01/main-3.webp"
+    ],
+    "detailMedia": [
+      "/media/images/Shoes01/detail-1.webp",
+      "/media/images/Shoes01/detail-2.webp",
+      "/media/images/Shoes01/detail-3.webp",
+      "/media/images/Shoes01/detail-4.webp",
+      "/media/images/Shoes01/detail-5.webp",
+      "/media/images/Shoes01/detail-6.webp",
+      "/media/images/Shoes01/detail-7.webp",
+      "/media/images/Shoes01/detail-8.webp"
+    ]
   },
   {
     "id": "img-suncream",
@@ -535,5 +602,109 @@
       "/media/images/wristband/detail-8.webp"
     ],
     "bannerImg": "/media/images/wristband/banner.webp"
+  },
+  {
+    "id": "vid-baixi",
+    "category": "clothing",
+    "type": "video",
+    "cover": "",
+    "videoSrc": "/media/videos/baixi.mp4",
+    "title": "【白隙】性冷淡高知女性日系女衬衫露肩拼接针织 100%埃及长绒棉亚麻 假日简约文艺风格",
+    "mainMedia": [],
+    "detailMedia": []
+  },
+  {
+    "id": "vid-clothes",
+    "category": "general",
+    "type": "video",
+    "cover": "",
+    "videoSrc": "/media/videos/clothes.mp4",
+    "title": "clothes",
+    "mainMedia": [],
+    "detailMedia": []
+  },
+  {
+    "id": "vid-OHBT",
+    "category": "beauty",
+    "type": "video",
+    "cover": "",
+    "videoSrc": "/media/videos/OHBT.mp4",
+    "title": "【OHBT】377专利美白沐浴露 烟酰胺成分 28天提亮实证 丝滑乳霜质地美白润肤奢华体验",
+    "mainMedia": [],
+    "detailMedia": []
+  },
+  {
+    "id": "vid-perfume",
+    "category": "general",
+    "type": "video",
+    "cover": "",
+    "videoSrc": "/media/videos/perfume.mp4",
+    "title": "perfume",
+    "mainMedia": [],
+    "detailMedia": []
+  },
+  {
+    "id": "vid-potori",
+    "category": "general",
+    "type": "video",
+    "cover": "",
+    "videoSrc": "/media/videos/potori.mp4",
+    "title": "potori",
+    "mainMedia": [],
+    "detailMedia": []
+  },
+  {
+    "id": "vid-savondelily",
+    "category": "beauty",
+    "type": "video",
+    "cover": "",
+    "videoSrc": "/media/videos/savondelily.mp4",
+    "title": "SAVON DE LILY萨汶之铃淡香水清新皂感花香调持久留香简约设计多场景适用",
+    "mainMedia": [],
+    "detailMedia": []
+  },
+  {
+    "id": "vid-wisadel",
+    "category": "general",
+    "type": "video",
+    "cover": "",
+    "videoSrc": "/media/videos/wisadel.mp4",
+    "title": "wisadel",
+    "mainMedia": [],
+    "detailMedia": []
+  },
+  {
+    "id": "gallery-collection",
+    "category": "gallery",
+    "type": "gallery",
+    "title": "Visual Gallery",
+    "cover": "/media/gallery/G (1).webp",
+    "mainMedia": [
+      "/media/gallery/G (1).webp",
+      "/media/gallery/G (2).webp",
+      "/media/gallery/G (3).webp",
+      "/media/gallery/G (4).webp",
+      "/media/gallery/G (5).webp",
+      "/media/gallery/G (6).webp",
+      "/media/gallery/G (7).webp",
+      "/media/gallery/G (8).webp",
+      "/media/gallery/G (9).webp",
+      "/media/gallery/G (10).png",
+      "/media/gallery/G (11).webp",
+      "/media/gallery/G (12).webp",
+      "/media/gallery/G (13).webp",
+      "/media/gallery/G (14).webp",
+      "/media/gallery/G (15).webp",
+      "/media/gallery/G (16).webp",
+      "/media/gallery/G (17).webp",
+      "/media/gallery/G (18).webp",
+      "/media/gallery/G (19).webp",
+      "/media/gallery/G (20).webp",
+      "/media/gallery/G (21).webp",
+      "/media/gallery/G (22).webp",
+      "/media/gallery/G (23).webp",
+      "/media/gallery/G (24).webp"
+    ],
+    "detailMedia": []
   }
 ]
