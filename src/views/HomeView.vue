@@ -129,11 +129,16 @@ const handleTabOrSearchChange = () => {
 onMounted(async () => {
   const res = await fetch('/assets.json')
   const data = await res.json()
-  allItems.value = data.map((item: any) => ({
-    ...item,
-    price: item.price || (Math.random() * 800 + 50).toFixed(0),
-    originPrice: item.originPrice || (Math.random() * 1000 + 500).toFixed(0)
-  }))
+  
+  // 🎯 核心修复：过滤掉 type 为 'video' 和 'gallery' 的项目，防止它们在主页显示为幽灵商品
+  allItems.value = data
+    .filter(item => item.type !== 'video' && item.type !== 'gallery')
+    .map((item: any) => ({
+      ...item,
+      price: item.price || (Math.random() * 800 + 50).toFixed(0),
+      originPrice: item.originPrice || (Math.random() * 1000 + 500).toFixed(0)
+    }))
+    
   loadMore()
   nextTick(() => {
     if (bannerScrollRef.value) bannerScrollRef.value.scrollLeft = bannerScrollRef.value.clientWidth * 1

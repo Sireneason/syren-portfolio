@@ -12,7 +12,7 @@ const videoExts = ['.mp4', '.webm', '.mov'];
 
 let assets = [];
 
-console.log('🔍 开始扫描媒体文件夹...\n');
+console.log(' 开始扫描媒体文件夹...\n');
 
 // ==========================================
 // 1. 读取旧数据以保留分类和标题
@@ -104,12 +104,12 @@ if (fs.existsSync(imagesDir)) {
 }
 
 // ==========================================
-// 3. 扫描视频 (Videos) - 修复：支持根目录文件
+// 3. 扫描视频 (Videos) - 强制分类为 'video'
 // ==========================================
 if (fs.existsSync(videosDir)) {
   const items = fs.readdirSync(videosDir);
   
-  // A. 扫描直接放在 videos 根目录的视频文件
+  // A. 扫描根目录视频
   const rootVideos = items.filter(f => {
     const isFile = fs.statSync(path.join(videosDir, f)).isFile();
     return isFile && videoExts.includes(path.extname(f).toLowerCase());
@@ -120,14 +120,13 @@ if (fs.existsSync(videosDir)) {
     const videoPath = `/media/videos/${file}`;
     
     const history = oldDataMap.get(fileNameWithoutExt) || {};
-    const finalCategory = (history.category && history.category !== 'general') ? history.category : 'general';
     const finalTitle = (history.title && history.title !== fileNameWithoutExt) ? history.title : fileNameWithoutExt;
 
     assets.push({
       id: `vid-${fileNameWithoutExt}`,
-      category: finalCategory, 
+      category: 'video', //  强制设为 video，不再混入 general
       type: 'video',
-      cover: '', // 无封面
+      cover: '',
       videoSrc: videoPath,
       title: finalTitle, 
       mainMedia: [],
@@ -136,7 +135,7 @@ if (fs.existsSync(videosDir)) {
     console.log(`✅ [视频] 扫描完成 (根目录): ${file}`);
   });
 
-  // B. 扫描子文件夹中的视频
+  // B. 扫描子文件夹视频
   const folders = items.filter(f => fs.statSync(path.join(videosDir, f)).isDirectory());
   folders.forEach(folder => {
     const folderPath = path.join(videosDir, folder);
@@ -146,12 +145,11 @@ if (fs.existsSync(videosDir)) {
     if (!videoFile) return;
 
     const history = oldDataMap.get(folder) || {};
-    const finalCategory = (history.category && history.category !== 'general') ? history.category : 'general';
     const finalTitle = (history.title && history.title !== folder) ? history.title : folder;
 
     assets.push({
       id: `vid-${folder}`,
-      category: finalCategory, 
+      category: 'video', // 🎯 强制设为 video
       type: 'video',
       cover: '',
       videoSrc: `/media/videos/${folder}/${videoFile}`,
@@ -164,7 +162,7 @@ if (fs.existsSync(videosDir)) {
 }
 
 // ==========================================
-// 4. 扫描画廊 (Gallery)
+// 4. 扫描画廊 (Gallery) - 强制分类为 'gallery'
 // ==========================================
 if (fs.existsSync(galleryDir)) {
   const files = fs.readdirSync(galleryDir)
@@ -176,7 +174,7 @@ if (fs.existsSync(galleryDir)) {
     
     assets.push({
       id: 'gallery-collection',
-      category: 'gallery',
+      category: 'gallery', // 🎯 强制设为 gallery
       type: 'gallery',
       title: 'Visual Gallery',
       cover: galleryMedia[0],

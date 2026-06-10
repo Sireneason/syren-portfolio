@@ -73,7 +73,7 @@
             <div class="flex-1">
               <div class="text-sm font-bold text-gray-800">自由职业 / 独立开发者</div>
 
-              <p class="text-xs text-gray-500 leading-relaxed">完成多个应用的开发，包括大批量自动化商品搬运工具，自定义图像处理工具，ERP管理系统，数字人直播系统，探索 AI 自动化工作流，承接电商视觉设计与 AIGC 相关项目。</p>
+              <p class="text-xs text-gray-500 leading-relaxed">完成多个应用的开发，包括大批量自动化商品搬运工具，自定义图像处理工具，详情页违规预检测工具，ERP管理系统，数字人直播系统，探索 AI 自动化工作流，承接电商视觉设计与 AIGC 相关项目。</p>
             </div>
           </div>
 

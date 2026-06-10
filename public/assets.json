@@ -605,7 +605,7 @@
   },
   {
     "id": "vid-baixi",
-    "category": "clothing",
+    "category": "video",
     "type": "video",
     "cover": "",
     "videoSrc": "/media/videos/baixi.mp4",
@@ -615,7 +615,7 @@
   },
   {
     "id": "vid-clothes",
-    "category": "general",
+    "category": "video",
     "type": "video",
     "cover": "",
     "videoSrc": "/media/videos/clothes.mp4",
@@ -625,7 +625,7 @@
   },
   {
     "id": "vid-OHBT",
-    "category": "beauty",
+    "category": "video",
     "type": "video",
     "cover": "",
     "videoSrc": "/media/videos/OHBT.mp4",
@@ -635,7 +635,7 @@
   },
   {
     "id": "vid-perfume",
-    "category": "general",
+    "category": "video",
     "type": "video",
     "cover": "",
     "videoSrc": "/media/videos/perfume.mp4",
@@ -645,7 +645,7 @@
   },
   {
     "id": "vid-potori",
-    "category": "general",
+    "category": "video",
     "type": "video",
     "cover": "",
     "videoSrc": "/media/videos/potori.mp4",
@@ -655,7 +655,7 @@
   },
   {
     "id": "vid-savondelily",
-    "category": "beauty",
+    "category": "video",
     "type": "video",
     "cover": "",
     "videoSrc": "/media/videos/savondelily.mp4",
@@ -665,7 +665,7 @@
   },
   {
     "id": "vid-wisadel",
-    "category": "general",
+    "category": "video",
     "type": "video",
     "cover": "",
     "videoSrc": "/media/videos/wisadel.mp4",
