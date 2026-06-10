@@ -50,7 +50,7 @@
   },
   {
     "id": "img-baixi",
-    "category": "clothing",
+    "category": "video",
     "type": "image",
     "cover": "/media/images/baixi/cover.webp",
     "title": "【白隙】性冷淡高知女性日系女衬衫露肩拼接针织 100%埃及长绒棉亚麻 假日简约文艺风格",
@@ -234,7 +234,7 @@
   },
   {
     "id": "img-OHBT",
-    "category": "beauty",
+    "category": "video",
     "type": "image",
     "cover": "/media/images/OHBT/cover.webp",
     "title": "【OHBT】377专利美白沐浴露 烟酰胺成分 28天提亮实证 丝滑乳霜质地美白润肤奢华体验",
@@ -326,7 +326,7 @@
   },
   {
     "id": "img-savondelily",
-    "category": "beauty",
+    "category": "video",
     "type": "image",
     "cover": "/media/images/savondelily/cover.webp",
     "title": "SAVON DE LILY萨汶之铃淡香水清新皂感花香调持久留香简约设计多场景适用",
@@ -644,12 +644,12 @@
     "detailMedia": []
   },
   {
-    "id": "vid-potori",
+    "id": "vid-pocari",
     "category": "video",
     "type": "video",
     "cover": "",
-    "videoSrc": "/media/videos/potori.mp4",
-    "title": "potori",
+    "videoSrc": "/media/videos/pocari.mp4",
+    "title": "pocari",
     "mainMedia": [],
     "detailMedia": []
   },
