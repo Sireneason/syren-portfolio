@@ -146,6 +146,30 @@
     ]
   },
   {
+    "id": "img-gothic",
+    "category": "clothing",
+    "type": "image",
+    "cover": "/media/images/gothic/cover.webp",
+    "title": "FASCINATE圆弧LOGO胶印基础短袖上衣美式高街潮牌重磅T恤夏季男女",
+    "mainMedia": [
+      "/media/images/gothic/main-1.webp",
+      "/media/images/gothic/main-2.webp",
+      "/media/images/gothic/main-3.webp",
+      "/media/images/gothic/main-4.webp"
+    ],
+    "detailMedia": [
+      "/media/images/gothic/detail-1.webp",
+      "/media/images/gothic/detail-2.webp",
+      "/media/images/gothic/detail-3.webp",
+      "/media/images/gothic/detail-4.webp",
+      "/media/images/gothic/detail-5.webp",
+      "/media/images/gothic/detail-6.webp",
+      "/media/images/gothic/detail-7.webp",
+      "/media/images/gothic/detail-8.webp",
+      "/media/images/gothic/detail-9.webp"
+    ]
+  },
+  {
     "id": "img-hydratingcream",
     "category": "beauty",
     "type": "image",
@@ -188,6 +212,27 @@
       "/media/images/loquat/detail-6.webp",
       "/media/images/loquat/detail-7.webp",
       "/media/images/loquat/detail-8.webp"
+    ]
+  },
+  {
+    "id": "img-man01",
+    "category": "clothing",
+    "type": "image",
+    "cover": "/media/images/man01/cover.webp",
+    "title": "夏季轻熟男推荐美式宽松重磅珠地棉男士休闲百搭圆领短袖T恤夏",
+    "mainMedia": [
+      "/media/images/man01/main-1.webp",
+      "/media/images/man01/main-2.webp",
+      "/media/images/man01/main-3.webp"
+    ],
+    "detailMedia": [
+      "/media/images/man01/detail-1.webp",
+      "/media/images/man01/detail-2.webp",
+      "/media/images/man01/detail-3.webp",
+      "/media/images/man01/detail-4.webp",
+      "/media/images/man01/detail-5.webp",
+      "/media/images/man01/detail-6.webp",
+      "/media/images/man01/detail-7.webp"
     ]
   },
   {
@@ -604,6 +649,73 @@
     "bannerImg": "/media/images/wristband/banner.webp"
   },
   {
+    "id": "img-yoga",
+    "category": "clothing",
+    "type": "image",
+    "cover": "/media/images/yoga/cover.webp",
+    "title": "FAS瑜伽服女新款带胸垫短袖运动健身普拉提训练服女上衣美背套装",
+    "mainMedia": [
+      "/media/images/yoga/main-1.webp",
+      "/media/images/yoga/main-2.webp",
+      "/media/images/yoga/main-3.webp"
+    ],
+    "detailMedia": [
+      "/media/images/yoga/detail-1.webp",
+      "/media/images/yoga/detail-2.webp",
+      "/media/images/yoga/detail-3.webp",
+      "/media/images/yoga/detail-4.webp",
+      "/media/images/yoga/detail-5.webp",
+      "/media/images/yoga/detail-6.webp",
+      "/media/images/yoga/detail-7.webp"
+    ]
+  },
+  {
+    "id": "img-yoga1",
+    "category": "clothing",
+    "type": "image",
+    "cover": "/media/images/yoga1/cover.webp",
+    "title": "白色假两件微喇瑜伽裤女外穿2026夏季薄款高腰提臀运动骑行打底裤",
+    "mainMedia": [
+      "/media/images/yoga1/main-1.webp",
+      "/media/images/yoga1/main-2.webp",
+      "/media/images/yoga1/main-3.webp",
+      "/media/images/yoga1/main-4.webp"
+    ],
+    "detailMedia": [
+      "/media/images/yoga1/detail-1.webp",
+      "/media/images/yoga1/detail-2.webp",
+      "/media/images/yoga1/detail-3.webp",
+      "/media/images/yoga1/detail-4.webp",
+      "/media/images/yoga1/detail-5.webp",
+      "/media/images/yoga1/detail-6.webp",
+      "/media/images/yoga1/detail-7.webp",
+      "/media/images/yoga1/detail-8.webp"
+    ]
+  },
+  {
+    "id": "img-yoga2",
+    "category": "clothing",
+    "type": "image",
+    "cover": "/media/images/yoga2/cover.webp",
+    "title": "FAS瑜伽套装鲨鱼裤女外穿高腰瑜伽裤秋夏季薄款收腹提臀显瘦打底裤2026新款",
+    "mainMedia": [
+      "/media/images/yoga2/main-1.webp",
+      "/media/images/yoga2/main-2.webp",
+      "/media/images/yoga2/main-3.webp"
+    ],
+    "detailMedia": [
+      "/media/images/yoga2/detail-1.webp",
+      "/media/images/yoga2/detail-2.webp",
+      "/media/images/yoga2/detail-3.webp",
+      "/media/images/yoga2/detail-4.webp",
+      "/media/images/yoga2/detail-5.webp",
+      "/media/images/yoga2/detail-6.webp",
+      "/media/images/yoga2/detail-7.webp",
+      "/media/images/yoga2/detail-8.webp",
+      "/media/images/yoga2/detail-9.webp"
+    ]
+  },
+  {
     "id": "vid-baixi",
     "category": "video",
     "type": "video",
@@ -620,6 +732,16 @@
     "cover": "",
     "videoSrc": "/media/videos/clothes.mp4",
     "title": "clothes",
+    "mainMedia": [],
+    "detailMedia": []
+  },
+  {
+    "id": "vid-FAS",
+    "category": "video",
+    "type": "video",
+    "cover": "",
+    "videoSrc": "/media/videos/FAS.mp4",
+    "title": "FAS",
     "mainMedia": [],
     "detailMedia": []
   },
