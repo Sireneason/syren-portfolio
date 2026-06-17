@@ -72,35 +72,6 @@
     "bannerImg": "/media/images/baixi/banner.webp"
   },
   {
-    "id": "img-downcoat",
-    "category": "clothing",
-    "type": "image",
-    "cover": "/media/images/downcoat/cover.webp",
-    "title": "浅米色短款羽绒服女保暖ANDANIM粉色毛绒内衬纽扣拉链双设计休闲时尚百搭",
-    "mainMedia": [
-      "/media/images/downcoat/main-1.webp",
-      "/media/images/downcoat/main-2.webp",
-      "/media/images/downcoat/main-3.webp",
-      "/media/images/downcoat/main-4.webp"
-    ],
-    "detailMedia": [
-      "/media/images/downcoat/detail-1.webp",
-      "/media/images/downcoat/detail-2.webp",
-      "/media/images/downcoat/detail-3.webp",
-      "/media/images/downcoat/detail-4.webp",
-      "/media/images/downcoat/detail-5.webp",
-      "/media/images/downcoat/detail-6.webp",
-      "/media/images/downcoat/detail-7.webp",
-      "/media/images/downcoat/detail-8.webp",
-      "/media/images/downcoat/detail-9.webp",
-      "/media/images/downcoat/detail-10.webp",
-      "/media/images/downcoat/detail-11.webp",
-      "/media/images/downcoat/detail-12.webp",
-      "/media/images/downcoat/detail-13.webp",
-      "/media/images/downcoat/detail-14.webp"
-    ]
-  },
-  {
     "id": "img-downcoat02",
     "category": "clothing",
     "type": "image",
