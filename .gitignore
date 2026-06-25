@@ -8,14 +8,15 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+node_modules_backup/
 dist
 dist-ssr
 *.local
 
 # Editor directories and files
 .vscode/*
-.vs
 !.vscode/extensions.json
+.vs
 .idea
 .DS_Store
 *.suo
@@ -23,3 +24,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# WorkBuddy
+.workbuddy/
+
+# OS
+Thumbs.db
+Desktop.ini
