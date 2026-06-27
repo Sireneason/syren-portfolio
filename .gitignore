@@ -39,3 +39,10 @@ convert-to-webp.mjs
 # OS
 Thumbs.db
 Desktop.ini
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
