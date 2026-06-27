@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed, nextTick, Directive } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, reactive, onMounted, onUnmounted, computed, nextTick } from 'vue'
+import type { ObjectDirective } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 
 const router = useRouter()
+const route = useRoute()
 const allItems = ref<any[]>([])
 const displayItems = ref<any[]>([])
 const activeTab = ref('推荐')
@@ -81,7 +83,7 @@ const switchBanner = (direction: 1 | -1) => {
   startBannerTimer()
 }
 
-const vReveal: Directive = {
+const vReveal: ObjectDirective<HTMLElement> = {
   mounted(el: HTMLElement) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -127,6 +129,12 @@ const handleTabOrSearchChange = () => {
 }
 
 onMounted(async () => {
+  // 读取 URL query 中的 tab 参数，支持从子页面 ←HOME 返回时定位到指定 tab
+  const queryTab = route.query.tab as string
+  if (queryTab && tabs.includes(queryTab)) {
+    activeTab.value = queryTab
+  }
+
   const res = await fetch('/assets.json')
   const data = await res.json()
   
@@ -145,6 +153,8 @@ onMounted(async () => {
     startBannerTimer()
   })
   window.addEventListener('scroll', handleScroll, { passive: true })
+  // 预加载综合页 Hero 图片（多格式自动探测）
+  heroBases.forEach(tryLoadHeroImage)
 })
 
 onUnmounted(() => {
@@ -168,6 +178,28 @@ const filteredItems = computed(() => {
 })
 
 const goDetail = (id: string) => { router.push(`/detail/${id}`) }
+
+// 综合页 Hero 图片多格式支持（jpg/png/webp 自动探测）
+const heroBases = ['beauty_hero', 'fashion_hero', 'furniture_hero', 'crafts_hero'] as const
+const heroImageMap = reactive<Record<string, string>>({})
+const HERO_EXTS = ['webp', 'jpg', 'jpeg', 'png']
+
+const tryLoadHeroImage = (baseName: string) => {
+  const tryNext = (extIndex: number) => {
+    if (extIndex >= HERO_EXTS.length) {
+      heroImageMap[baseName] = `/images/${baseName}.jpg`
+      return
+    }
+    const ext = HERO_EXTS[extIndex]
+    const img = new Image()
+    img.onload = () => {
+      heroImageMap[baseName] = `/images/${baseName}.${ext}`
+    }
+    img.onerror = () => { tryNext(extIndex + 1) }
+    img.src = `/images/${baseName}.${ext}`
+  }
+  tryNext(0)
+}
 </script>
 
 <template>
@@ -204,7 +236,60 @@ const goDetail = (id: string) => { router.push(`/detail/${id}`) }
       </div>
     </div>
 
-    <main class="p-2 md:px-12 columns-2 md:columns-3 lg:columns-4 gap-2 md:gap-5 max-w-7xl mx-auto mt-4 md:mt-10">
+    <!-- 多类目展示 -->
+    <section v-if="activeTab === '综合' && !searchQuery.trim()" class="max-w-7xl mx-auto px-4 md:px-12 mt-6">
+      <div class="mb-5">
+        <h2 class="text-lg font-medium text-text tracking-wide">多类目展示</h2>
+      </div>
+      <div class="flex flex-col gap-4 md:gap-6">
+        <router-link to="/beauty" class="group relative w-full aspect-[16/7] md:aspect-[21/7] rounded-2xl overflow-hidden border border-gray-100 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer">
+          <img :src="heroImageMap['beauty_hero'] || '/images/beauty_hero.webp'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5 md:p-8">
+            <span class="text-white/50 text-xs font-light tracking-[0.2em] uppercase">Beauty</span>
+            <h3 class="text-white text-2xl md:text-4xl font-medium tracking-wide mt-1">美妆</h3>
+          </div>
+          <div class="absolute bottom-5 md:bottom-8 right-5 md:right-8 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+            <span class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-md text-white text-sm px-5 py-2 rounded-full border border-white/20">进入<span class="text-xs">›</span></span>
+          </div>
+        </router-link>
+        <router-link to="/fashion" class="group relative w-full aspect-[16/7] md:aspect-[21/7] rounded-2xl overflow-hidden border border-gray-100 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer">
+          <img :src="heroImageMap['fashion_hero'] || '/images/fashion_hero.webp'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5 md:p-8">
+            <span class="text-white/50 text-xs font-light tracking-[0.2em] uppercase">Fashion</span>
+            <h3 class="text-white text-2xl md:text-4xl font-medium tracking-wide mt-1">时装</h3>
+          </div>
+          <div class="absolute bottom-5 md:bottom-8 right-5 md:right-8 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+            <span class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-md text-white text-sm px-5 py-2 rounded-full border border-white/20">进入<span class="text-xs">›</span></span>
+          </div>
+        </router-link>
+        <router-link to="/furniture" class="group relative w-full aspect-[16/7] md:aspect-[21/7] rounded-2xl overflow-hidden border border-gray-100 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer">
+          <img :src="heroImageMap['furniture_hero'] || '/images/furniture_hero.webp'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5 md:p-8">
+            <span class="text-white/50 text-xs font-light tracking-[0.2em] uppercase">Furniture</span>
+            <h3 class="text-white text-2xl md:text-4xl font-medium tracking-wide mt-1">家居</h3>
+          </div>
+          <div class="absolute bottom-5 md:bottom-8 right-5 md:right-8 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+            <span class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-md text-white text-sm px-5 py-2 rounded-full border border-white/20">进入<span class="text-xs">›</span></span>
+          </div>
+        </router-link>
+        <router-link to="/crafts" class="group relative w-full aspect-[16/7] md:aspect-[21/7] rounded-2xl overflow-hidden border border-gray-100 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer">
+          <img :src="heroImageMap['crafts_hero'] || '/images/crafts_hero.webp'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-5 md:p-8">
+            <span class="text-white/50 text-xs font-light tracking-[0.2em] uppercase">Crafts</span>
+            <h3 class="text-white text-2xl md:text-4xl font-medium tracking-wide mt-1">工艺品</h3>
+          </div>
+          <div class="absolute bottom-5 md:bottom-8 right-5 md:right-8 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+            <span class="inline-flex items-center gap-1.5 bg-white/20 backdrop-blur-md text-white text-sm px-5 py-2 rounded-full border border-white/20">进入<span class="text-xs">›</span></span>
+          </div>
+        </router-link>
+      </div>
+    </section>
+
+    <main v-if="!(activeTab === '综合' && !searchQuery.trim())" class="p-2 md:px-12 columns-2 md:columns-3 lg:columns-4 gap-2 md:gap-5 max-w-7xl mx-auto mt-4 md:mt-10">
       <div
         v-for="(item, index) in filteredItems" :key="`${item.id}-${index}`"
         @click="goDetail(item.id)"
@@ -230,7 +315,7 @@ const goDetail = (id: string) => { router.push(`/detail/${id}`) }
         </div>
       </div>
       <div v-if="filteredItems.length === 0 && !isLoading" class="col-span-full text-center py-20 text-gray-400 font-light tracking-widest text-base">
-        {{ searchQuery.trim() ? '暂未收录该商品，感谢支持' : '该分类下暂无作品' }}
+        {{ searchQuery.trim() ? '暂未收录该商品，感谢支持' : '' }}
       </div>
     </main>
 

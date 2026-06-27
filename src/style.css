@@ -11,6 +11,22 @@
   --color-text-light: #666666;
   
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Fascinate 子页面品牌色 */
+  --font-serif: "Cormorant Garamond", "Noto Serif SC", serif;
+  --color-aesop-cream: #F5F0EB;
+  --color-aesop-brown: #4A3728;
+  --color-aesop-olive: #6B6B4E;
+  --color-aesop-tan: #C4A882;
+  --color-hermes-orange: #F37021;
+  --color-hermes-cream: #FDF6EC;
+  --color-hermes-dark: #1A1A1A;
+  --color-westelm-warm: #F7F3EE;
+  --color-westelm-wood: #8B6F47;
+  --color-westelm-sage: #A8B5A0;
+  --color-diptyque-black: #1A1A1A;
+  --color-diptyque-gold: #C4A265;
+  --color-diptyque-cream: #FAF7F2;
 }
 
 /* 全局基础样式：极细字重 + 浅色背景 */
@@ -54,4 +70,15 @@ body {
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
   .mb-safe { margin-bottom: env(safe-area-inset-bottom); }
+}
+
+/* Fascinate 子页面滚动渐显动画 */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

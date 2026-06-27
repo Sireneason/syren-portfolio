@@ -28,6 +28,14 @@ dist-ssr
 # WorkBuddy
 .workbuddy/
 
+# 本地图片处理脚本（仅本地使用，CF 构建不调用）
+generate-assets.cjs
+convert-to-webp.mjs
+
+# 示例/占位文件
+*.example
+*.example2
+
 # OS
 Thumbs.db
 Desktop.ini

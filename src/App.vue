@@ -11,11 +11,14 @@ const isActive = (path: string) => route.path === path
 const showTabBar = computed(() => {
   return ['/', '/video', '/gallery', '/cart', '/about'].includes(route.path)
 })
+const showHeader = computed(() => {
+  return !['/beauty', '/fashion', '/furniture', '/crafts'].includes(route.path)
+})
 </script>
 
 <template>
   <div class="min-h-screen bg-bg" :class="showTabBar ? 'pb-14 md:pb-0' : ''">
-    <header class="hidden md:flex sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 h-16 px-12 items-center justify-between">
+    <header v-show="showHeader" class="hidden md:flex sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 h-16 px-12 items-center justify-between">
       <router-link to="/" class="text-2xl font-black tracking-tighter text-text hover:opacity-80 transition-opacity">
         PORTFOLIO<span class="text-primary">.</span>
       </router-link>
