@@ -27,7 +27,7 @@ const initObserver = () => {
 
 onMounted(async () => {
   try {
-    const res = await fetch('/assets.json')
+    const res = await fetch(import.meta.env.BASE_URL + 'assets.json')
     const data = await res.json()
     
     // 过滤出所有视频类型的数据

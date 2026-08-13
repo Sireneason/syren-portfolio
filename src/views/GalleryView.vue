@@ -56,7 +56,7 @@ onMounted(async () => {
   isMobile.value = window.innerWidth < 768
 
   try {
-    const res = await fetch('/assets.json')
+    const res = await fetch(import.meta.env.BASE_URL + 'assets.json')
     const data = await res.json()
     const galleryData = data.find((item: any) => item.type === 'gallery')
 

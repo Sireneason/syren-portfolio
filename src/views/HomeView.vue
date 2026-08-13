@@ -5,6 +5,7 @@ import { useRouter, useRoute } from 'vue-router'
 
 const router = useRouter()
 const route = useRoute()
+const BASE = import.meta.env.BASE_URL
 const allItems = ref<any[]>([])
 const displayItems = ref<any[]>([])
 const activeTab = ref('推荐')
@@ -135,7 +136,7 @@ onMounted(async () => {
     activeTab.value = queryTab
   }
 
-  const res = await fetch('/assets.json')
+  const res = await fetch(BASE + 'assets.json')
   const data = await res.json()
   
   // 🎯 核心修复：过滤掉 type 为 'video' 和 'gallery' 的项目，防止它们在主页显示为幽灵商品
@@ -187,16 +188,16 @@ const HERO_EXTS = ['webp', 'jpg', 'jpeg', 'png']
 const tryLoadHeroImage = (baseName: string) => {
   const tryNext = (extIndex: number) => {
     if (extIndex >= HERO_EXTS.length) {
-      heroImageMap[baseName] = `/images/${baseName}.jpg`
+      heroImageMap[baseName] = `${BASE}images/${baseName}.jpg`
       return
     }
     const ext = HERO_EXTS[extIndex]
     const img = new Image()
     img.onload = () => {
-      heroImageMap[baseName] = `/images/${baseName}.${ext}`
+      heroImageMap[baseName] = `${BASE}images/${baseName}.${ext}`
     }
     img.onerror = () => { tryNext(extIndex + 1) }
-    img.src = `/images/${baseName}.${ext}`
+    img.src = `${BASE}images/${baseName}.${ext}`
   }
   tryNext(0)
 }
@@ -243,7 +244,7 @@ const tryLoadHeroImage = (baseName: string) => {
       </div>
       <div class="flex flex-col gap-4 md:gap-6">
         <router-link to="/beauty" class="group relative w-full aspect-[16/7] md:aspect-[21/7] rounded-2xl overflow-hidden border border-gray-100 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer">
-          <img :src="heroImageMap['beauty_hero'] || '/images/beauty_hero.webp'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <img :src="heroImageMap['beauty_hero'] || BASE + 'images/beauty_hero.png'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
           <div class="absolute bottom-0 left-0 p-5 md:p-8">
             <span class="text-white/50 text-xs font-light tracking-[0.2em] uppercase">Beauty</span>
@@ -254,7 +255,7 @@ const tryLoadHeroImage = (baseName: string) => {
           </div>
         </router-link>
         <router-link to="/fashion" class="group relative w-full aspect-[16/7] md:aspect-[21/7] rounded-2xl overflow-hidden border border-gray-100 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer">
-          <img :src="heroImageMap['fashion_hero'] || '/images/fashion_hero.webp'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <img :src="heroImageMap['fashion_hero'] || BASE + 'images/fashion_hero.jpg'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
           <div class="absolute bottom-0 left-0 p-5 md:p-8">
             <span class="text-white/50 text-xs font-light tracking-[0.2em] uppercase">Fashion</span>
@@ -265,7 +266,7 @@ const tryLoadHeroImage = (baseName: string) => {
           </div>
         </router-link>
         <router-link to="/furniture" class="group relative w-full aspect-[16/7] md:aspect-[21/7] rounded-2xl overflow-hidden border border-gray-100 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer">
-          <img :src="heroImageMap['furniture_hero'] || '/images/furniture_hero.webp'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <img :src="heroImageMap['furniture_hero'] || BASE + 'images/furniture_hero.jpg'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
           <div class="absolute bottom-0 left-0 p-5 md:p-8">
             <span class="text-white/50 text-xs font-light tracking-[0.2em] uppercase">Furniture</span>
@@ -276,7 +277,7 @@ const tryLoadHeroImage = (baseName: string) => {
           </div>
         </router-link>
         <router-link to="/crafts" class="group relative w-full aspect-[16/7] md:aspect-[21/7] rounded-2xl overflow-hidden border border-gray-100 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 cursor-pointer">
-          <img :src="heroImageMap['crafts_hero'] || '/images/crafts_hero.webp'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <img :src="heroImageMap['crafts_hero'] || BASE + 'images/crafts_hero.jpg'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
           <div class="absolute bottom-0 left-0 p-5 md:p-8">
             <span class="text-white/50 text-xs font-light tracking-[0.2em] uppercase">Crafts</span>

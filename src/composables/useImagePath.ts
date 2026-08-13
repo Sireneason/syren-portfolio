@@ -30,11 +30,12 @@ function probeImage(src: string): Promise<boolean> {
 
 // 单个图片路径探测，返回 Ref<string>（始终有值，默认 .jpg 兜底）
 export function useImagePath(baseName: string, folder = 'images'): Ref<string> {
-  const result = ref(`/${folder}/${baseName}.jpg`)
+  const BASE = import.meta.env.BASE_URL
+  const result = ref(`${BASE}${folder}/${baseName}.jpg`)
   const tryNext = async (index: number) => {
     if (index >= EXTENSIONS.length) return
     const ext = EXTENSIONS[index]
-    const src = `/${folder}/${baseName}.${ext}`
+    const src = `${BASE}${folder}/${baseName}.${ext}`
     const ok = await probeImage(src)
     if (ok) {
       result.value = src

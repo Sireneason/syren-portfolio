@@ -37,7 +37,7 @@ const switchMainImage = (directionOrIndex: number) => {
 }
 
 onMounted(async () => {
-  const res = await fetch('/assets.json')
+  const res = await fetch(import.meta.env.BASE_URL + 'assets.json')
   const list = await res.json()
   item.value = list.find((i: any) => i.id === route.params.id)
   if (item.value) {
