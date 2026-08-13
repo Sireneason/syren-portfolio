@@ -1,4 +1,7 @@
-<!doctype html>
+// syren-portfolio 路由 Worker
+// 职责：根路径 / 返回占位页，/my/* 服务应用（含 SPA 回退）
+
+const PLACEHOLDER_HTML = `<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
@@ -39,4 +42,31 @@
       <p class="note">正在建设 · Coming Soon</p>
     </div>
   </body>
-</html>
+</html>`
+
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url)
+    const path = url.pathname
+
+    // 根路径 → 占位页
+    if (path === '/' || path === '/index.html') {
+      return new Response(PLACEHOLDER_HTML, {
+        headers: { 'Content-Type': 'text/html; charset=utf-8' },
+      })
+    }
+
+    // /my 及 /my/* → 服务应用（静态资产优先，404 时 SPA 回退）
+    if (path === '/my' || path.startsWith('/my/')) {
+      const assetResponse = await env.ASSETS.fetch(request)
+      if (assetResponse.status !== 404) {
+        return assetResponse
+      }
+      // SPA 回退到 /my/index.html
+      return env.ASSETS.fetch(new Request(new URL('/my/index.html', url), request))
+    }
+
+    // 其他路径 → 404
+    return new Response('Not Found', { status: 404 })
+  },
+}
